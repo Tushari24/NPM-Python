@@ -1,0 +1,23 @@
+/********* PIP SSL FIX *************/
+
+$ pip config set global.cert %USERPROFILE%\AppData\Local\pip\ZscalerRootCertificate-2048-SHA256.pem    /** Must have zscaler file in path provided & also gives path to pip.ini file genrated*/
+
+$ pip config list
+
+/* After this goto pip.ini file just genrated and add following ***/
+
+// in [global]  just below cert by +1 enter and paste follwing =>
+
+trusted-host = pypi.python.org
+               pypi.org
+               files.pythonhosted.org
+
+
+// save file
+///////////////////////////////////////////////////////////////////////////
+
+
+
+////////*****     %USERPROFILE%\AppData\Local\pip\ZscalerRootCertificate-2048-SHA256.pem     *********//////
+
+
