@@ -1,3 +1,8 @@
+/*** NPM uses semantic versioning system
+* what is semantic versioning system
+* Links :https://semver.org/  , https://www.geeksforgeeks.org/introduction-semantic-versioning/
+**/
+
 // app.disable('x-powered-by') //for client not able to detect app power by express
 
 // request // axios lib is help us to send req to another services (serve as client in api consumer in node)
@@ -128,10 +133,50 @@ npm ls – list installed modules
 npm ll or npm la – print additional package information while listing modules
 
 
-/*********************************************************/
+/****************************************************************************************/
+
+/*************************** list of utilities Packages **********************************/
+
+1. http-server   // used to serve folder on temporary server : $ npm install http-server -g;
+ Usage : $ http-server foldername; 
+  
+2.nodemon        /*lib use for any save in file will reload webapp for node js app : $ npm install nodemon -g;
+		    usage nodemon filename.js  to enable auto reload on file save*/
+ Usage : $ nodemon filename.js;   //  to enable auto reload on file save	
+ 
+3.uglifyjs       // $ uglifyjs example.js -o example.min.js // for minification of js files
+
+/************************* Handling Python Error  *******************************/
+
+1. download python if require for the module
+2. if its not solved install the dependency using the cmd
+// for example python 3 installed on system then
+// $ npm install --python=python3 
+
+/******************** Installing Dev Dependencies *********************************/
+
+$ npm install mocha -dev  // installing dev dependency // mocha is testing liberary in JS
+
+/** In npm  'mocha' cmd is used to run tests so you can pu it in the scripts of the 
+* package.json file for ex: 'test': 'mocha'
+* and can be run from cmd as : $ npm test
+* NOTE : mocha requires the test folder that can be used to excute tests on build refer mocha for more website 
+**/
+
+// NOTE : By Default the $npm install cmd installs the dev depednecy also bcs of its defult nature is the devlopment
+/********************************************************************************************************************/
+
+
+/*** installing dependency for production only cmd **/
+// NODE_ENV is node env variable
+
+$ NODE_ENV=production npm install 
+
+/*****************************************************/
 
 
 
+For More GOTO : docs.npms.com
 
 
 
