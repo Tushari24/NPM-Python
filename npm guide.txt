@@ -155,7 +155,7 @@ npm ll or npm la – print additional package information while listing modules
 
 /******************** Installing Dev Dependencies *********************************/
 
-$ npm install mocha dev  // installing dev dependency // mocha is testing liberary in JS
+$ npm install mocha --save-dev  // installing dev dependency // mocha is testing liberary in JS
 
 /** In npm  'mocha' cmd is used to run tests so you can pu it in the scripts of the 
 * package.json file for ex: 'test': 'mocha'
